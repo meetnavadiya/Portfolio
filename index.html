@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meet Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    /* Responsive Navbar */
+    .menu-icon {
+      display: none;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgb(32, 137, 235);
+        flex-direction: column;
+        display: none;
+      }
+      .navbar a {
+        margin: 15px 0;
+        display: block;
+        text-align: center;
+      }
+      .navbar.active {
+        display: flex;
+      }
+      .menu-icon {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="cursor"></div>
+  <div id="cursor-border"></div>
+
+  <!-- Example elements with data-cursor attributes -->
+  <button data-cursor="pointer">Pointer Button</button>
+  <button data-cursor="pointer2">Pointer2 Button</button>
+
+  <header class="header">
+    <a href="#" class="logo">Meet</a>
+    <div class="menu-icon" id="menu-icon"><i class='bx bx-menu'></i></div>
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="">Resume</a>
+      <a href="">Projects</a>
+      <a href="">Contact</a>
+    </nav>
+  </header>
+
+  <section class="home">
+    <div class="home-content">
+      <h1>Hi, I'M Meet Navadiya</h1>
+      <h3>Full-Stack Developer</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At incidunt quas consectetur ipsam voluptatem...</p>
+      <div class="btn-box">
+        <a href="./assets/meet navadiya.pdf" download><i class='bx bxs-download'></i> Download CV</a>
+        <a href="#contact"><i class='bx bx-message-rounded-dots'></i> Let's Talk</a>
+      </div>
+
+
+    </div>
+  
+    <div class="home-imgHover"><img src="./assets/profile.jpg" alt=""></div>
+  </section>
+
+      <section class="about-section" id="about">
+    <div class="about-image">
+      <img src="./assets/meh.jpg" alt="Profile Image" style="height:450px;">
+    </div>
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>Welcome to my personal portfolio! I'm Meet Navadiya, a passionate developer showcasing my work in web development, certifications, and creative projects. Explore my skills, see my achievements, and check out the projects that define my journey in tech.</p>
+
+      <div class="tabs">
+        <span class="tab-link active">Skills</span>
+        <span class="tab-link">Experience</span>
+        <span class="tab-link">Education</span>
+        <span class="tab-link">Award</span>
+      </div>
+
+      <div class="tab-content active">
+        <span class="skill-pill small"><i class="fab fa-html5"></i> HTML</span>
+        <span class="skill-pill small"><i class="fab fa-css3-alt"></i> CSS</span>
+        <span class="skill-pill small"><i class="fab fa-js"></i> JavaScript</span>
+        <span class="skill-pill small"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+        <span class="skill-pill small"><i class="fab fa-react"></i> React.js</span>
+        <span class="skill-pill small"><i class="fab fa-python"></i> Python</span>
+        <span class="skill-pill small"><i class="fa-solid fa-leaf"></i> Django</span>
+        <span class="skill-pill small"><i class="fa-solid fa-flask"></i> Flask</span>
+        <span class="skill-pill small"><i class="fas fa-database"></i> MongoDB</span>
+        <span class="skill-pill small"><i class="fas fa-server"></i> SQL</span>
+      </div>
+
+      <div class="tab-content">
+        <ul>
+          <li>Full Stack Intern - Tech Company</li>
+          <li>Freelance Projects - Web Development</li>
+        </ul>
+      </div>
+
+      <div class="tab-content">
+        <ul>
+          <li>B.Sc in Computer Science</li>
+          <li>Web Development Bootcamp</li>
+        </ul>
+      </div>
+
+      <div class="tab-content">
+        <img src="./assets/cer.png" class="clickable-certificate" style="height:215px;"/>
+        <img src="./assets/meet_March01_3[1].png" class="clickable-certificate"/>
+      </div>
+
+      <div id="certificate-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+  <h2 class="section-title">My Services</h2>
+  <div class="services-container">
+    
+    <div class="service-box">
+      <div class="icon">💻</div>
+      <h3>Web Development</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+      <a href="#">Learn more</a>
+    </div>
+    <div class="service-box">
+      <div class="icon"><i class="fa-brands fa-python"></i></div>
+      <h3>Django</h3>
+      <p>High-level Python Web framework that encourages rapid development.</p>
+      <a href="#">Learn more</a>
+    </div>
+
+    <div class="service-box">
+      <div class="icon"><i class="fa-solid fa-bolt"></i></div>
+      <h3>FastAPI</h3>
+      <p>Modern, fast (high-performance) web framework for building APIs with Python.</p>
+      <a href="#">Learn more</a>
+    </div>
+
+
+  </div>
+</section>
+
+<section class="gallery-section">
+  <h1 class="gallery-section">My Projects</h1>
+  <div class="gallery-container">
+    <img src="./assets/image1.jpg" alt="Image 1">
+    <img src="./assets/image2.jpg" alt="Image 2">
+    <img src="./assets/image3.jpg" alt="Image 3">
+  </div>
+  <a href="#" class="see-more-btn">See more</a>
+</section>
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="contact-container">
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <p><strong>Email:</strong> meetnavadiya08@gmail.com</p>
+      <p><strong>Phone:</strong> +91 7016333497</p>
+      <p><strong>Location:</strong> Surat, India</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2025 Meet Navadiya. All rights reserved.</p>
+  <div class="footer-socials">
+    <a href="https://www.linkedin.com/in/meet-navadiya/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/meetnavadiya" target="_blank">GitHub</a>
+    <a href="#" target="_blank">Instagram</a>
+  </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</htm
