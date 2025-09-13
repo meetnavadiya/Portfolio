@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meet Navadiya - Full-Stack Developer Portfolio. Web development, Django, Python, and modern web solutions." />
+  <meta name="keywords" content="Full-Stack Developer, Python, Django, Web Development, Portfolio" />
+  <meta name="author" content="Meet Navadiya" />
+  <title>Meet Navadiya - Full-Stack Developer Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/profile.jpg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="./assets/profile.jpg" as="image">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="animated-background">
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    <div class="particles"></div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-border"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="logo" aria-label="Meet Navadiya Portfolio">
+        <span class="logo-text">Meet</span>
+        <span class="logo-dot"></span>
+      </a>
+      <button class="menu-icon" id="menu-icon" aria-label="Toggle navigation menu">
+        <i class='bx bx-menu'></i>
+      </button>
+      <nav class="navbar" id="navbar" role="navigation">
+        <a href="#home" class="nav-link active">
+          <i class='bx bx-home-alt'></i>
+          <span>Home</span>
+        </a>
+        <a href="#about" class="nav-link">
+          <i class='bx bx-user'></i>
+          <span>About</span>
+        </a>
+        <a href="#services" class="nav-link">
+          <i class='bx bx-cog'></i>
+          <span>Services</span>
+        </a>
+        <a href="#projects" class="nav-link">
+          <i class='bx bx-code-alt'></i>
+          <span>Projects</span>
+        </a>
+        <a href="#contact" class="nav-link">
+          <i class='bx bx-envelope'></i>
+          <span>Contact</span>
+        </a>
+    </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span>🚀 Available for opportunities</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight typing-text">Meet Navadiya</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            <span class="role-text">Full-Stack Developer</span>
+          </h2>
+          <p class="hero-description">
+            Passionate about creating innovative web solutions with modern technologies. 
+            Specialized in Python, Django, and full-stack development with a focus on 
+            scalable and user-friendly applications.
+          </p>
+          <div class="hero-buttons">
+            <a href="./assets/meet navadiya.pdf" download class="btn btn-primary btn-glow">
+              <i class='bx bxs-download'></i> Download CV
+            </a>
+            <a href="#contact" class="btn btn-secondary btn-outline-glow">
+              <i class='bx bx-message-rounded-dots'></i> Let's Talk
+            </a>
+          </div>
+          <!-- <div class="tech-logos">
+            <img src="./assets/python-logo.png" alt="Python" class="tech-logo" />
+            <img src="./assets/django-logo.png" alt="Django" class="tech-logo" />
+            <img src="./assets/js-logo.png" alt="JavaScript" class="tech-logo" />
+          </div> -->
+          <div class="hero-social">
+            <a href="https://www.linkedin.com/in/meet-navadiya/" target="_blank" rel="noopener noreferrer" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/meetnavadiya" target="_blank" rel="noopener noreferrer" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://instagram.com/meetttt.____" target="_blank" rel="noopener noreferrer" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-container">
+            <img src="./assets/profile.jpg" alt="Meet Navadiya - Full-Stack Developer" loading="eager">
+            <div class="image-glow"></div>
+            <div class="floating-elements">
+              <div class="float-element" data-speed="2">
+                <i class="fab fa-python"></i>
+              </div>
+              <div class="float-element" data-speed="1.5">
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+              <div class="float-element" data-speed="2.5">
+                <i class="fab fa-js"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+        <span>Scroll Down</span>
+    </div>
+  </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know me better</p>
+        </div>
+        <div class="about-container">
+    <div class="about-image">
+            <div class="image-wrapper">
+              <img src="./assets/meh.jpg" alt="Meet Navadiya Profile" loading="lazy">
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <h3>Meet Navadiya</h3>
+                  <p>Full-Stack Developer</p>
+                </div>
+              </div>
+            </div>
+    </div>
+    <div class="about-content">
+            <div class="about-intro">
+              <h3 class="about-title">Passionate Developer & Problem Solver</h3>
+              <p class="about-description">
+                Welcome to my personal portfolio! I'm Meet Navadiya, a passionate developer 
+                showcasing my work in web development, certifications, and creative projects. 
+                I love turning complex problems into simple, beautiful, and intuitive solutions.
+              </p>
+            </div>
+
+      <div class="tabs">
+              <button class="tab-link active" data-tab="skills">
+                <i class='bx bx-code-alt'></i>
+                <span>Skills</span>
+              </button>
+              <button class="tab-link" data-tab="experience">
+                <i class='bx bx-briefcase'></i>
+                <span>Experience</span>
+              </button>
+              <button class="tab-link" data-tab="education">
+                <i class='bx bx-graduation'></i>
+                <span>Education</span>
+              </button>
+              <button class="tab-link" data-tab="awards">
+                <i class='bx bx-trophy'></i>
+                <span>Awards</span>
+              </button>
+      </div>
+
+            <div class="tab-content active" id="skills">
+              <div class="skills-categories">
+                <!-- <div class="skill-category"> -->
+                  <h4>Frontend</h4> <br>
+                  <div class="skills-grid">
+                    <span class="skill-pill" data-skill="HTML">
+                      <i class="fab fa-html5"></i> HTML
+                    </span>
+                    <span class="skill-pill" data-skill="CSS">
+                      <i class="fab fa-css3-alt"></i> CSS
+                    </span>
+                    <span class="skill-pill" data-skill="JavaScript">
+                      <i class="fab fa-js"></i> JavaScript
+                    </span>
+                    <span class="skill-pill" data-skill="Bootstrap">
+                      <i class="fab fa-bootstrap"></i> Bootstrap
+                    </span>
+                    <span class="skill-pill" data-skill="Tailwind">
+                      <i class="fa-brands fa-css3"></i> Tailwind CSS
+                    </span>
+                  </div><br>
+                <!-- </div> -->
+                
+                <!-- <div class="skill-category"> -->
+                  <h4>Backend</h4><br>
+                  <div class="skills-grid">
+                    <span class="skill-pill" data-skill="Python">
+                      <i class="fab fa-python"></i> Python
+                    </span>
+                    <span class="skill-pill" data-skill="Django">
+                      <i class="fa-solid fa-leaf"></i> Django
+                    </span>
+                    <span class="skill-pill" data-skill="DRF">
+                      <i class="fa-solid fa-plug"></i> DRF
+                    </span>
+                    <span class="skill-pill" data-skill="Flask">
+                      <i class="fa-solid fa-flask"></i> Flask
+                    </span>
+                  </div><br>
+<!-- </div> -->
+
+                <!-- <div class="skill-category"> -->
+                  <h4>Database & Tools</h4><br>
+                  <div class="skills-grid">
+                    <span class="skill-pill" data-skill="SQL">
+                      <i class="fas fa-database"></i> SQL
+                    </span>
+                    <span class="skill-pill" data-skill="MongoDB">
+                      <i class="fas fa-database"></i> MongoDB
+                    </span>
+                    <span class="skill-pill" data-skill="PostgreSQL">
+                      <i class="fas fa-database"></i> PostgreSQL
+                    </span>
+                    <span class="skill-pill" data-skill="Docker">
+                      <i class="fab fa-docker"></i> Docker
+                    </span>
+                    <span class="skill-pill" data-skill="AWS">
+                      <i class="fab fa-aws"></i> AWS
+                    </span>
+                    <span class="skill-pill" data-skill="Git">
+                      <i class="fab fa-git-alt"></i> Git
+                    </span>
+                    <span class="skill-pill" data-skill="GitHub">
+                      <i class="fab fa-github"></i> GitHub
+                    </span>
+                    <span class="skill-pill" data-skill="Postman">
+                      <i class="fas fa-envelope-open-text"></i> Postman
+                    </span>
+                  </div>
+                </div>
+              </div>
+      <!-- </div> -->
+
+            <div class="tab-content" id="experience">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h3>Python Developer</h3>
+                    <p class="company">Pytact Solutions</p>
+                    <p class="duration">Present</p>
+                    <p class="description">Developing scalable web applications using Django DRF, Docker, Auth0, OIDC, Linux, MongoDB, PostgreSQL, MySQL, and AWS. Building robust backend systems with modern DevOps practices and cloud technologies.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h3>Python Full Stack Development [Internship]</h3>
+                    <p class="company">Oceanmtech Technology, Surat</p>
+                    <p class="duration">May 2025 - July 2025 (3 months)</p>
+                    <p class="description">Completed 3-month internship working on real-world projects using Django, REST APIs, and modern development practices. Gained hands-on experience in full-stack development.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h3>Python Full Stack Development Training</h3>
+                    <p class="company">JSpiders India Pvt. Ltd., Bangalore</p>
+                    <p class="duration">Aug 2024 - Feb 2025</p>
+                    <p class="description">Comprehensive training in Python full-stack development covering Django, Flask, and modern web technologies.</p>
+                  </div>
+                </div>
+              </div>
+      </div>
+
+            <div class="tab-content" id="education">
+              <div class="education-grid">
+                <div class="education-card">
+                  <div class="education-icon">
+                    <i class='bx bx-graduation'></i>
+                  </div>
+                  <div class="education-content">
+                    <h3>Bachelor of Science in Information Technology (BSc IT)</h3>
+                    <p class="institution">Gujarat University</p>
+                    <p class="graduation">Graduated: May 2024</p>
+                    <p class="gpa">CGPA: 6.95 / 10</p>
+                  </div>
+                </div>
+                <div class="certification-card">
+                  <div class="certification-icon">
+                    <i class='bx bx-certification'></i>
+                  </div>
+                  <div class="certification-content">
+                    <h3>Python for Data Science</h3>
+                    <p class="platform">Coursera</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/WLBM6MAYEYFV" 
+                       target="_blank" rel="noopener noreferrer" class="cert-link">
+                      <i class='bx bx-link-external'></i> View Certificate
+                    </a>
+                  </div>
+                </div>
+              </div>
+      </div>
+
+            <div class="tab-content" id="awards">
+              <div class="certificates-showcase">
+                <div class="certificate-item">
+                  <img src="./assets/cer.png" alt="Certificate 1" class="certificate-img" loading="lazy">
+                  <div class="certificate-overlay">
+                    <i class='bx bx-zoom-in'></i>
+                  </div>
+                </div>
+                <div class="certificate-item">
+                  <img src="./assets/meet_March01_3[1].png" alt="Certificate 2" class="certificate-img" loading="lazy">
+                  <div class="certificate-overlay">
+                    <i class='bx bx-zoom-in'></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+    <!-- Services Section -->
+  <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+  <h2 class="section-title">My Services</h2>
+          <p class="section-subtitle">What I can do for you</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card" data-aos="fade-up">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>Building robust and scalable web applications using modern Python frameworks and technologies. From backend APIs to full-stack solutions.</p>
+            <ul class="service-features">
+              <li>Python</li>
+              <li>Django</li>
+              <li>Django REST Framework (DRF)</li>
+            </ul>
+            <a href="#contact" class="service-link">Get Started</a>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Databases</h3>
+            <p>Expert database design and management across multiple database systems. Optimizing performance and ensuring data integrity for your applications.</p>
+            <ul class="service-features">
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+            </ul>
+            <a href="#contact" class="service-link">Learn More</a>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <h3>Cloud Services</h3>
+            <p>Deploying and managing applications in the cloud with containerization and cloud services. Ensuring scalability and reliability.</p>
+            <ul class="service-features">
+              <li>Docker</li>
+              <li>AWS</li>
+            </ul>
+            <a href="#contact" class="service-link">Explore</a>
+          </div>
+        </div>
+  </div>
+</section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-subtitle">Some of my recent work</p>
+        </div>
+        <div class="projects-grid">
+          <a href="https://github.com/meetnavadiya/BlogPost---A-Simple-Dynamic-Blogging-Platform" 
+             target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up">
+            <div class="project-image">
+              <img src="./assets/image1.jpg" alt="Blog Post Platform" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">Django</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">SQLite</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Blog Post Platform</h3>
+              <p>Dynamic blogging platform built with modern web technologies. Features user authentication, CRUD operations, and responsive design.</p>
+              <div class="project-links">
+                <span class="project-link">
+                  <i class='bx bx-link-external'></i> View Project
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/meetnavadiya/StudentDesk" 
+             target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-image">
+              <img src="./assets/image2.jpg" alt="Student Management System" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">Django</span>
+                  <span class="tech-tag">Bootstrap</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Student Management System</h3>
+              <p>Comprehensive student management solution with features for student registration, course management, and grade tracking.</p>
+              <div class="project-links">
+                <span class="project-link">
+                  <i class='bx bx-link-external'></i> View Project
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/meetnavadiya/Weather-Website" 
+             target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-image">
+              <img src="./assets/image3.jpg" alt="Weather App" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Weather App</h3>
+              <p>Real-time weather information application with location-based weather data, forecasts, and interactive weather maps.</p>
+              <div class="project-links">
+                <span class="project-link">
+                  <i class='bx bx-link-external'></i> View Project
+                </span>
+              </div>
+            </div>
+          </a>
+        </div> <br>
+        <div class="projects-cta">
+          <a href="https://github.com/meetnavadiya?tab=repositories" 
+             target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-large">
+            <i class='bx bx-github'></i> View More Projects
+          </a>
+        </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's work together</p>
+        </div>
+  <div class="contact-container">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Type" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-large">
+              <i class='bx bx-send'></i> Send Message
+            </button>
+    </form>
+          
+    <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <p>meetnavadiya08@gmail.com</p>
+                <a href="mailto:meetnavadiya08@gmail.com" class="contact-link">Send Email</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Phone</h3>
+                <p>+91 7016333497</p>
+                <a href="tel:+917016333497" class="contact-link">Call Now</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Location</h3>
+                <p>Surat, Gujarat, India</p>
+                <span class="contact-link">Available for remote work</span>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <h3>Meet Navadiya</h3>
+            <p>Full-Stack Developer passionate about creating amazing web experiences.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+          </div>
+          <div class="footer-services">
+            <h4>Services</h4>
+            <ul>
+              <li>Web Development</li>
+              <li>Django Development</li>
+              <li>FastAPI Development</li>
+              <li>UI/UX Design</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Meet Navadiya. All rights reserved.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/meet-navadiya/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/meetnavadiya" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  </div>
+</footer>
+
+  <!-- Image Modal -->
+  <div id="image-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" id="modal-close">&times;</span>
+      <img id="modal-img" alt="Image">
+      <div class="modal-caption" id="modal-caption"></div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class='bx bx-chevron-up'></i>
+  </button>
+
+  <!-- Scripts -->
+<script src="./script.js"></script>
+</body>
+</html>
